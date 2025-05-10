@@ -76,7 +76,7 @@ public Properties p;
 	         	case "firefox": capabilities.setBrowserName("firefox");break;
 				default:System.out.println("No Matching Browser");return;//if invalid browser exit from the total test,instead of executing rest of the code
 	        	}
-	         driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+	         driver=new RemoteWebDriver(new URL("http://localhost:8080/"), capabilities);
 	        }
 	        
         if(p.getProperty("execution_env").equalsIgnoreCase("local"))
